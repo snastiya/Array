@@ -23,13 +23,20 @@ public class Array {
             i++;
         }
 
-        for (String element : anArr)
+        int index = 0;
+        int max = 0;
+        String maxval  = null;
 
+        for (String element : anArr) {
+            if (element.length() > max)
+            {
+                max = element.length();
+                maxval = element;
+            }
+        }
 
             //System.out.print(element + " ");
-
-
-          System.out.println(element.length());
+        System.out.println("Самое длинное слово в массиве имеет номер: " + maxval);
 
             }
 
